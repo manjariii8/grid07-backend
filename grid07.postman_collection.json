@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "61a6aca4-cdef-469a-b8d2-b14d9b0c5a3c",
+    "name": "grid07",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53318436",
+    "_collection_link": "https://go.postman.co/collection/53318436-61a6aca4-cdef-469a-b8d2-b14d9b0c5a3c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "like",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"authorId\": 2,\r\n  \"authorType\": \"BOT\",\r\n  \"content\": \"Bot reply\",\r\n  \"depthLevel\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/posts/1/like",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "posts",
+            "1",
+            "like"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "posts",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"authorId\": 2,\r\n  \"authorType\": \"USER\",\r\n  \"content\": \"Welcome to Manjari's Project!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/posts",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "posts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "comment",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"authorId\": 1,\r\n  \"authorType\": \"BOT\",\r\n  \"content\": \"Bot reply\",\r\n  \"depthLevel\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/posts/1/comments",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "posts",
+            "1",
+            "comments"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
